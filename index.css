@@ -1,17 +1,26 @@
 * {
   box-sizing: border-box;
 }
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  padding: 0;
+  margin: 0;
+}
 .jumbotron {
   background-color: hsl(256, 26%, 20%);
   height: 80vh;
-}
-.intro-left {
-  padding-left: 30px;
+  padding-left: 10%;
+  position: relative;
 }
 .intro-left-svg {
   width: 50%;
   height: 50%;
+  position: absolute;
+  top: -200px;
+  right: 200px;
 }
+
 .lead > button {
   background-color: white;
   color: black;
@@ -22,9 +31,21 @@
   width: 20%;
   margin-left: 0;
 }
-.intro-img {
-  width: 80%;
-  height: 95%;
+.intro-mobile {
+  max-width: 100%;
+  display: none;
+}
+.intro-img-desktop {
+  max-width: 100%;
+  display: block;
+}
+@media only screen and (max-width: 400px) {
+  .intro-mobile {
+    display: block;
+  }
+  .intro-img-desktop {
+    display: none;
+  }
 }
 .mid-hr {
   width: 20%;
@@ -55,10 +76,10 @@
 }
 
 .footer-nav {
-  margin: 5%;
+  margin: 10%;
 }
 .footer-header {
-  padding: 1%;
+  padding: 10%;
 }
 
 .footer-body a {
