@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="html.css" />
+    <title>Pricing component</title>
+  </head>
+  <body class="container" >
+    <header
+      class="d-flex justify-content-center m-5 font-weight-bold font-size text-muted"
+    >
+      Our Pricing
+    </header>
+
+    <div class="custom-control custom-switch row d-flex justify-content-center"> 
+
+      <input type="checkbox" class="custom-control-input" id="customSwitches" />   
+      </label>  
+      <label class="custom-control-label m-3 " for="customSwitches">
+        <div style="font-size: 20px;">Monthly / Anually</div>
+      </label>
+    </div>
+
+    <div class="pricing-container d-flex justify-content-center">
+      <section class="card1">
+        <div class="card text-center m-0 p-0 ">
+          <div class="card-body">
+            <h5 class="card-title">Basic</h5>
+            <p class="card-text display-4">
+              <div class="monthly display-4">&dollar;19.99 </div>
+              <div class="yearly display-4"> &dollar;199.99</div></p>
+            <ul class="">
+              <hr>
+              <li class="">500 GB Storage</li>
+              <hr>
+              <li class="">2 Users Allowed</li>
+              <hr>
+              <li class="">Send up to 3 GB</li>
+              <hr>
+            </ul>
+              <button class="btn btn-primary mt-0">Learn More</button>
+            </div>
+            
+        </div>
+      </section>
+      <section class="card2">
+        <div class="card m-0 p-0 text-center">
+          <div class="card-body">
+            <h5 class="card-title">Professional</h5>
+            <p class="card-text ">
+            <div class="monthly display-4">&dollar;24.99 </div>
+            <div class="yearly display-4"> &dollar;249.99</div></p>
+            
+            <ul class="">
+              <hr>
+              <li class="">1 TB Storage</li>
+              <hr>
+              <li class="">5 Users Allowed</li>
+              <hr>
+              <li class="">Send up to 10 GB</li>
+              <hr>
+            </ul>
+              <button class="btn btn-primary mt-0">Learn More</button>
+            </div>      
+        </div>
+      </section>
+      <section class="card3">
+        <div class="card text-center m-0 p-0">
+          <div class="card-body">
+            <h5 class="card-title">Mater</h5>
+            <p class="card-text display-4">
+              <div class="monthly display-4">&dollar;39.99 </div>
+              <div class="yearly display-4"> &dollar;399.99</div></p>
+            <ul class="">
+              <hr>
+              <li class="">2 TB Storage</li>
+              <hr>
+              <li class="">10 Users Allowed</li>
+              <hr>
+              <li class="">Send up to 20 GB</li>
+              <hr>
+            </ul>
+              <button class="btn btn-primary mt-0">Learn More</button>
+            </div>
+            </section>
+      </section>
+    </div>
+
+    <div class="attribution m-3">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Coco</a>.
+    </div>
+    <script>
+      $(document).ready(function(){
+        $(".yearly").hide();
+        $("#customSwitches").click(function(){
+          $(".monthly").toggle();})
+          $("#customSwitches").click(function(){
+          $(".yearly").toggle();})
+          
+        })
+      
+      </script>
+  </body>
+
+</html>

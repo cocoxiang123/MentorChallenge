@@ -1,0 +1,96 @@
+* {
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+header {
+  font-size: 2em;
+}
+@media screen and (min-width: 975px) {
+  .pricing-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 975px) {
+  .pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 375px) {
+  .pricing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+.custom-control-label::before {
+  background-color: hsl(236, 72%, 79%);
+}
+
+.custom-switch .custom-control-label::after {
+  background-color: #fff;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: hsl(236, 72%, 79%);
+  background-color: hsl(236, 72%, 79%);
+}
+.card {
+  transition: 0.5s ease;
+  box-shadow: 5px 5px 15px black;
+  width: 20rem;
+  height: 28rem;
+}
+.card:hover {
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  transform: scale(1.1);
+  color: white;
+}
+ul {
+  list-style: none;
+  text-align: center;
+  margin-left: 0;
+  padding: 0;
+}
+hr {
+  margin-left: 0px;
+  padding: 0px;
+}
+.btn {
+  background-color: white;
+  color: hsl(237, 63%, 64%);
+  border: 1px solid hsl(237, 63%, 64%);
+  font-weight: bold;
+  width: 80%;
+  text-transform: uppercase;
+}
+.btn.btn-primary:hover,
+.btn.btn-primary:visited,
+.btn:active {
+  background-color: hsl(237, 63%, 64%);
+  color: white;
+  border: 1px solid white;
+}
+
+.monthly .yearly {
+  color: hsl(233, 13%, 49%);
+  font-weight: bold;
+}
+.attribution {
+  margin-top: 30px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+header {
+  color: hsl(240, 78%, 98%) hsl(234, 14%, 74%) hsl(233, 13%, 49%)
+    hsl(232, 13%, 33%);
+}
