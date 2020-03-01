@@ -1,0 +1,82 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  text-align: center;
+  width: 45%;
+  margin: auto;
+}
+header .title {
+  color: hsl(229, 16%, 56%);
+  font-weight: 100;
+  margin-top: 50px;
+}
+header h2 {
+  font-weight: 600;
+  margin: 0;
+}
+header p {
+  color: hsl(229, 6%, 66%);
+  font-weight: lighter;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1100px) {
+  .container {
+    flex-direction: column;
+  }
+}
+.container .card {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  box-shadow: 5px 10px 18px #888888;
+  margin: 10px;
+  text-align: center;
+  transition: 0.5s;
+}
+.container .card:hover {
+  transform: scale(1.1);
+}
+.container .card::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  border-radius: 15px;
+}
+.container .card:nth-child(1)::after {
+  background-color: hsl(180, 62%, 55%);
+}
+.container .middle .card:nth-child(1)::after {
+  background: hsl(0, 78%, 62%);
+}
+.container .middle .card:nth-child(2)::after {
+  background: hsl(34, 97%, 64%);
+}
+.container .card:nth-child(3)::after {
+  background: hsl(212, 86%, 64%);
+}
+.container .card .image {
+  float: right;
+  padding: 30px;
+}
+.container .middle {
+  display: flex;
+  flex-direction: column;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
