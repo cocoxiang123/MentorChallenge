@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body class="container m-2">
+    <div class="intro row">
+      <section class="intro-left col-lg-7 p-5">
+        <div class="logo mb-5">
+          <img src="./images/logo.svg" />
+        </div>
+        <header class="display-4 text-uppercase my-2 text-center text-lg-left">
+          <div class="d-lg-none d-block mb-3">
+            <img src="./images/hero-mobile.jpg" />
+          </div>
+          <div style="color: hsl(0, 36%, 70%);">We're</div>
+          <div>coming</div>
+          <div>soon</div>
+        </header>
+        <p class="" style="color: hsl(0, 36%, 70%);">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form class="form" id="form">
+          <input type="text" id="email" placeholder="Email Address" />
+          <i><img src="./images/icon-error.svg"/></i>
+          <button type="submit" id="icon-click" class="btn"></button>
+          <div id="error"></div>
+        </form>
+      </section>
+      <aside class="intro-right col-4 d-lg-block d-none">
+        <img src="./images/hero-desktop.jpg" />
+      </aside>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+    <script>
+      var form = document.getElementById("form");
+      var input = document.getElementById("email");
+      var error = document.getElementById("error");
+
+      form.addEventListener("submit", e => {
+        e.preventDefault();
+        validation();
+      });
+
+      function validation() {
+        var inputValue = input.value;
+        var formValue = form.value;
+        var errorValue = error.value;
+        if (inputValue === "" || inputValue == null) {
+          error.innerHTML = "email is required";
+          input.parentElement.className = "form error";
+        } else if (!validateEmail(inputValue)) {
+          error.innerHTML = "email is not valid";
+          input.parentElement.className = "form error";
+        } else {
+          error.innerText = "Thanks for subscribe";
+          input.parentElement.className = "form";
+        }
+      }
+      function validateEmail(email) {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+      }
+    </script>
+  </body>
+</html>
