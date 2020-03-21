@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Job Listings</title>
+  </head>
+  <body>
+    <header class="nav"></header>
+    <section id="main">
+      <input type="text" id="tagInput" onchange="onChangeHandler(this.value)" />
+      <div class="container">
+        <div class="logo"><img src="./images/photosnap.svg" /></div>
+        <div class="discription">
+          <span>Photosnap</span>
+          <span>New! </span>
+          <span>Featured</span>
+
+          <div class="title">Senior Frontend Developer</div>
+          <div class="detail">
+            <ul>
+              <li>1d ago</li>
+              <li><strong>&middot;</strong> Full time</li>
+              <li><strong>&middot;</strong> USA only</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag Role">Front-end</span>
+          <span class="tag Level">Senior</span>
+          <span class="tag languages">HTML</span>
+          <span class="tag languages">CSS</span>
+          <span class="tag languages">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="logo"><img src="./images/manage.svg" /></div>
+        <div class="discription">
+          <span>Manage</span>
+          <span>New! </span>
+          <span>Featured</span>
+
+          <div class="title">Fullstack Developer</div>
+          <div class="detail">
+            <ul>
+              <li>1d ago</li>
+              <li><strong>&middot;</strong> Part time</li>
+              <li><strong>&middot;</strong> Remote</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag Role">Fullstack</span>
+          <span class="tag Level">Senior</span>
+          <span class="tag languages">Midweight</span>
+          <span class="tag languages">Python</span>
+          <span class="tag languages">React</span>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="logo"><img src="./images/account.svg" /></div>
+        <div class="discription">
+          <span>Account</span>
+          <span>New! </span>
+
+          <div class="title">Junior Frontend Developer</div>
+          <div class="detail">
+            <ul>
+              <li>2d ago</li>
+              <li><strong>&middot;</strong> Part time</li>
+              <li><strong>&middot;</strong> USA only</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag Role">Frontend</span>
+          <span class="tag Level">Junior</span>
+          <span class="tag languages">JavaScript</span>
+          <span class="tag languages">React Sass</span>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="logo"><img src="./images/myhome.svg" /></div>
+        <div class="discription">
+          <span>MyHome</span>
+
+          <div class="title">Junior Frontend Developer</div>
+          <div class="detail">
+            <ul>
+              <li>5d ago</li>
+              <li><strong>&middot;</strong> Contract</li>
+              <li><strong>&middot;</strong> USA only</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag Role">Frontend</span>
+          <span class="tag Level">Junior</span>
+          <span class="tag languages">CSS</span>
+          <span class="tag languages">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="logo"><img src="./images/loop-studios.svg" /></div>
+        <div class="discription">
+          <span>Loop Studios</span>
+
+          <div class="title">Software Engineerr</div>
+          <div class="detail">
+            <ul>
+              <li>1w ago</li>
+              <li><strong>&middot;</strong> Full Time</li>
+              <li><strong>&middot;</strong> Worldwide</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag Role">Fullstack</span>
+          <span class="tag Level">Midweight</span>
+          <span class="tag languages">JavaScript</span>
+          <span class="tag languages">Ruby</span>
+          <span class="tag tools">Sass</span>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="logo"><img src="./images/faceit.svg" /></div>
+        <div class="discription">
+          <span>FaceIt</span>
+
+          <div class="title">Junior Backend Developer</div>
+          <div class="detail">
+            <ul>
+              <li>2w ago</li>
+              <li><strong>&middot;</strong> Full Time</li>
+              <li><strong>&middot;</strong> UK only</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag Role">Backend</span>
+          <span class="tag Level">Junior</span>
+          <span class="tag languages">Ruby</span>
+          <span class="tag tools">RoR</span>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="logo"><img src="./images/shortly.svg" /></div>
+        <div class="discription">
+          <span>Shortly</span>
+
+          <div class="title">Junior Developer</div>
+          <div class="detail">
+            <ul>
+              <li>2w ago</li>
+              <li><strong>&middot;</strong> Full Time</li>
+              <li><strong>&middot;</strong> Worldwide</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag Role">Frontend</span>
+          <span class="tag Level">Junior</span>
+          <span class="tag languages">HTML</span>
+          <span class="tag languages">JavaScript</span>
+          <span class="tag tools">Sass</span>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="logo"><img src="./images/insure.svg" /></div>
+        <div class="discription">
+          <span>Insure</span>
+
+          <div class="title">Junior Frontend Developer</div>
+          <div class="detail">
+            <ul>
+              <li>2w ago</li>
+              <li><strong>&middot;</strong> Full Time</li>
+              <li><strong>&middot;</strong> USA only</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag Role">Frontend</span>
+          <span class="tag Level">Junior</span>
+          <span class="tag languages">JavaScript</span>
+          <span class="tag tools">Vue</span>
+          <span class="tag tools">Sass</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script>
+      // function onChangeHandler(input) {
+      // var inputValue = input.toUpperCase();
+      // alert(inputValue);
+      // var main = get;
+      // var main = getElementbyID("main");
+      // var components = main.getElementsByClassName("container");
+      //
+      // for (i = 0; i < components.length; i++) {
+      // var tags = components[i].getElementsByClassName("tag");
+      // for (i = 0; i < tags.length; i++) {
+      // arr1 = element.className.split(" ");
+      // console.log(arr1);
+      // }
+      // }
+      // }
+    </script>
+  </body>
+</html>

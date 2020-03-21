@@ -13,12 +13,10 @@ body {
   padding-left: 10%;
   position: relative;
 }
-.intro-left-svg {
-  width: 50%;
-  height: 50%;
+.intro-pic-l {
   position: absolute;
-  top: -200px;
-  right: 200px;
+  top: 200px;
+  left: 0;
 }
 
 .lead > button {
